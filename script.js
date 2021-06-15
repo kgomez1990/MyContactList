@@ -5,9 +5,9 @@ filterInput.addEventListener('keyup', filterNames);
 function filterNames () {
     let filterValue = document.getElementById('filter-Input').value.toUpperCase()
 
-    let names = document.getElementById('collection-with-header')
+    let names = document.getElementById('first-names')
 
-    let nameItems = ul.querySelectAll('li.collection-item')
+    let nameItems = names.querySelectorAll('li.collection-item');
 
     for (let i = 0; i < nameItems.length; i++) {
         let a = nameItems[i].getElementsByTagName('a')[0]
